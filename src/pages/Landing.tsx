@@ -1,15 +1,20 @@
-import Sidebar from "../components/SideNav"
+import { useLocation } from "react-router-dom";
+import Sidebar from "../components/SideNav";
+import Tasks from "../components/Tasks";
+import Dashboard from "../components/Dashboard";
 
 const Landing = () => {
+  const location = useLocation();
   return (
     <section className="flex">
       <Sidebar />
       <div className="flex-1 p-8">
-        <h2 className="text-3xl font-bold mb-4">Welcome to My Organiser</h2>
-        <p className="text-lg text-gray-700">This is your landing page. Use the side navigation to explore different sections of the app.</p>
+        {(location.pathname === "/" ||
+          location.pathname === "/userid/dashboard") && <Dashboard />}
+        {location.pathname === "/userid/tasks" && <Tasks />}
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Landing
+export default Landing;

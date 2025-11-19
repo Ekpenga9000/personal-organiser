@@ -19,7 +19,7 @@ const SideNav = () => {
                 <li className={ isClicked === "Calendar" ? "side-nav-item side-nav-item--clicked" : "side-nav-item"} onClick={() => handleClick("Calendar")}><GoCalendar /> Calendar</li>
                 <li className={ isClicked === "Goals" ? "side-nav-item side-nav-item--clicked" : "side-nav-item"} onClick={() => handleClick("Goals")}><GoGoal /> Goals</li>
                 <li className={ isClicked === "Notes" ? "side-nav-item side-nav-item--clicked" : "side-nav-item"} onClick={() => handleClick("Notes")}><GoNote /> Notes</li>
-                <li className="flex items-center cursor-pointer justify-between bg-gray-100 p-2 rounded">New Category <GoPlus /></li>
+                <li className="flex items-center cursor-pointer justify-between bg-gray-100 p-2 rounded">New Category <div className="text-blue-500"><GoPlus /></div></li>
 
                 <li className={ isClicked === "Settings" ? "side-nav-item side-nav-item--clicked" : "side-nav-item"} onClick={() => handleClick("Settings")}> <GoGear /> Settings</li>
             </ul>
