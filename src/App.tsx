@@ -1,11 +1,14 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"; 
+import Landing from "./pages/Landing";
+import Nav from "./components/Nav";
 
 
 function App() {
    return (
     <BrowserRouter>
+      <Nav />
       <Routes>
-        <Route path="/" element={<div className="text-3xl font-bold underline">Hello world!</div>} />
+        <Route path="/" element={<Landing />} />
       </Routes>
     </BrowserRouter>
   )
