@@ -7,3 +7,11 @@
 .nav-item {
     @apply p-2 hover:bg-gray-100 rounded-full hover:ease-in-out hover:duration-200 flex items-center justify-between;
 }
+
+.side-nav-item{
+    @apply p-2 cursor-pointer hover:bg-gray-100 rounded hover:ease-in-out hover:duration-200 flex items-center gap-4 text-gray-600;
+}
+
+.side-nav-item--clicked{
+    @apply bg-blue-500 text-white font-semibold hover:bg-blue-600;
+}
