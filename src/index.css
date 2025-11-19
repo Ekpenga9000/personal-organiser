@@ -2,16 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /* Create a custom css rule for the nav bar  */
 .nav-item {
-    @apply p-2 hover:bg-gray-100 rounded-full hover:ease-in-out hover:duration-200 flex items-center justify-between;
+  @apply p-2 hover:bg-gray-100 rounded-full hover:ease-in-out hover:duration-200 flex items-center justify-between;
 }
 
-.side-nav-item{
-    @apply p-2 cursor-pointer hover:bg-gray-100 rounded hover:ease-in-out hover:duration-200 flex items-center gap-4 text-gray-600;
+.side-nav-item {
+  @apply p-2 cursor-pointer hover:bg-gray-100 rounded hover:ease-in-out hover:duration-200 flex items-center gap-4 text-gray-600;
 }
 
-.side-nav-item--clicked{
-    @apply bg-blue-500 text-white font-semibold hover:bg-blue-600;
+.side-nav-item--clicked {
+  @apply bg-blue-500 text-white font-semibold hover:bg-blue-600;
+}
+
+.task-catergory-item {
+  @apply py-1 rounded-lg col-span-1 text-center cursor-pointer hover:bg-slate-200 hover:ease-in-out hover:duration-200;
+}
+
+.task-catergory-item--active {
+  @apply task-catergory-item bg-white hover:bg-white shadow-sm;
 }
