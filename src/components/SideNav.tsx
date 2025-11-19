@@ -1,11 +1,14 @@
 import { useState } from "react";
+import {useNavigate} from "react-router-dom";
 import { GoHome, GoTasklist, GoProject, GoGear, GoCalendar, GoGoal, GoNote, GoPlus } from "react-icons/go";
 
 const SideNav = () => {
     const [isClicked, setIsClicked] = useState("Dashboard");
+    const navigate = useNavigate();
 
    const handleClick = (item: string) => {
      setIsClicked(item);
+     navigate(`/userid/${item.toLowerCase()}`);
    }
     return (
         <section className="w-64 h-full p-4 border-r border-gray-200 min-h-screen">
@@ -18,7 +21,7 @@ const SideNav = () => {
                 <li className={ isClicked === "Notes" ? "side-nav-item side-nav-item--clicked" : "side-nav-item"} onClick={() => handleClick("Notes")}><GoNote /> Notes</li>
                 <li className="flex items-center cursor-pointer justify-between bg-gray-100 p-2 rounded">New Category <GoPlus /></li>
 
-                <li className="side-nav-item"> <GoGear /> Settings</li>
+                <li className={ isClicked === "Settings" ? "side-nav-item side-nav-item--clicked" : "side-nav-item"} onClick={() => handleClick("Settings")}> <GoGear /> Settings</li>
             </ul>
         </section>
     )
