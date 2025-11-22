@@ -20,7 +20,7 @@ const Tasks = () => {
       </p>
 
       <div
-        className="flex items-center gap-3 border rounded-lg shadow-sm py-2 px-4 cursor-pointer mb-6"
+        className="flex items-center gap-3 border rounded-lg shadow-sm py-2 px-4 cursor-pointer mb-6 hover:bg-gray-50"
         onClick={toggleModal}>
         <GoPlusCircle className="text-gray-600" />{" "}
         <span className="inline-block text-sm text-gray-500">

@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Toaster } from "react-hot-toast";
 import Landing from "./pages/Landing";
 import Nav from "./components/Nav";
 import Notfound from "./pages/NotFound";
@@ -6,6 +7,7 @@ import Notfound from "./pages/NotFound";
 function App() {
   return (
     <BrowserRouter>
+      <Toaster />
       <Nav />
       <Routes>
         {/* make /userid/["/", "dashboard", "tasks", "projects", "Calendar", "Goals", "Notes", "settings"] all connect to the Landing component */}
