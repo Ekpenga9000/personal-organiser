@@ -14,11 +14,19 @@ const TaskTable = ({ tasks }: TaskTableProps) => {
     setActiveCategory(category);
   };
 
-  const categories = ["All Tasks", "Work", "Personal", "Health", "Finance"];
+  const categories = [
+    "All Tasks",
+    "Work",
+    "Personal",
+    "Health",
+    "Finance",
+    "Education",
+    "Other",
+  ];
   return (
     <section className="mb-8">
       <div className="flex items-center justify-between mb-6">
-        <ul className="grid grid-cols-5 items-center justify-between p-1 text-sm text-gray-600 font-semibold rounded-lg bg-gray-100 w-[80%]">
+        <ul className="grid grid-cols-7 items-center justify-between p-1 text-sm text-gray-600 font-semibold rounded-lg bg-gray-100 w-[80%]">
           {categories.map((category) => (
             <li
               key={category}
