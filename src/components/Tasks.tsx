@@ -5,7 +5,7 @@ const Tasks = () => {
   return (
     <section>
       <h2 className="text-3xl font-bold mb-4">Task Manager</h2>
-      <p className="text-gray-600 mb-4">
+      <p className="text-gray-500 mb-4">
         Organize your daily tasks by category, priority, and deadline to stay on
         track.
       </p>
