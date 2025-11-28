@@ -3,6 +3,7 @@ import { Toaster } from "react-hot-toast";
 import Landing from "./pages/Landing";
 import Nav from "./components/Nav";
 import Notfound from "./pages/NotFound";
+import TaskDetails from "./components/TaskDetails";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         {/* make /userid/["/", "dashboard", "tasks", "projects", "Calendar", "Goals", "Notes", "settings"] all connect to the Landing component */}
         <Route path="/" element={<Landing />} />
         <Route path="/userid/tasks" element={<Landing />} />
+        <Route path="/tasks/:taskId" element={<Landing />} />
         <Route path="/userid/projects" element={<Landing />} />
         <Route path="/userid/dashboard" element={<Landing />} />
         <Route path="/userid/calendar" element={<Landing />} />

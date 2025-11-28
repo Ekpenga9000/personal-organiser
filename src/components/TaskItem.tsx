@@ -2,6 +2,7 @@ import { GoPencil } from "react-icons/go";
 import type { TaskItemProps } from "../interfaces/Interface";
 import { Link } from "react-router-dom";
 import TaskPriorityPill from "./TaskPriorityPill";
+import TaskCategoryPill from "./TaskCategoryPill";
 
 const TaskItem = ({
   id,
@@ -9,6 +10,7 @@ const TaskItem = ({
   dueDate,
   category,
   priority,
+  onClick,
 }: TaskItemProps) => {
   return (
     <li className="grid grid-cols-6 justify-between items-center gap-4 p-2 border rounded-lg hover:bg-gray-50">
@@ -21,11 +23,7 @@ const TaskItem = ({
       </div>
 
       <div className="col-span-1 flex justify-end">
-        <Link
-          to={`/tasks/category/${category}`}
-          className="inline-block bg-gray-100 text-teal-800 text-xs font-semibold px-3 py-1 rounded-full mr-2">
-          {category}
-        </Link>
+        <TaskCategoryPill category={category} onClick={onClick} />
       </div>
 
       <ul className="flex items-center justify-end gap-8">

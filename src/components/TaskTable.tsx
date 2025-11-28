@@ -9,9 +9,16 @@ type TaskTableProps = {
 
 const TaskTable = ({ tasks }: TaskTableProps) => {
   const [activeCategory, setActiveCategory] = useState("All Tasks");
+  const [taskData, setTaskData] = useState<TaskItemProps[] | undefined>(tasks);
 
-  const handleClick = (category: string) => {
+  const handleCategoryFilter = (category: string) => {
     setActiveCategory(category);
+    if (category === "All Tasks") {
+      setTaskData(tasks);
+    } else {
+      const filteredTasks = tasks?.filter((task) => task.category === category);
+      setTaskData(filteredTasks);
+    }
   };
 
   const categories = [
@@ -35,7 +42,7 @@ const TaskTable = ({ tasks }: TaskTableProps) => {
                   ? "task-catergory-item--active"
                   : "task-catergory-item"
               }
-              onClick={() => handleClick(category)}>
+              onClick={() => handleCategoryFilter(category)}>
               {category}
             </li>
           ))}
@@ -51,7 +58,7 @@ const TaskTable = ({ tasks }: TaskTableProps) => {
       </div>
       <div className="border rounded-lg shadow-sm p-4">
         <ul className="w-full border-collapse">
-          {tasks?.map((task) => (
+          {taskData?.map((task) => (
             <TaskItem
               key={task.id}
               id={task.id}
@@ -59,12 +66,17 @@ const TaskTable = ({ tasks }: TaskTableProps) => {
               dueDate={task.dueDate}
               category={task.category}
               priority={task.priority}
+              onClick={() => handleCategoryFilter(task.category)}
             />
           ))}
-          {tasks?.length === 0 ||
-            (!tasks && (
-              <p className="text-center text-gray-500">No tasks available.</p>
-            ))}
+          {!taskData && (
+            <p className="text-center text-gray-500">No tasks available.</p>
+          )}
+          {taskData && taskData.length === 0 && (
+            <p className="text-center text-gray-500">
+              No tasks in this category.
+            </p>
+          )}
         </ul>
       </div>
     </section>

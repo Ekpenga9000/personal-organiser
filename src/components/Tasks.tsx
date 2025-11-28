@@ -3,7 +3,7 @@ import { GoPlusCircle } from "react-icons/go";
 import TaskTable from "./TaskTable";
 import CreateTaskModal from "./CreateTaskModal";
 import ModalWrapper from "./ModalWrapper";
-import taskData from "../DB/tasks.json";
+import taskData from "../DB/tasks/tasks.json";
 
 type TaskItemProps = {
   id: string;
@@ -27,6 +27,13 @@ const Tasks = () => {
         Organize your daily tasks by category, priority, and deadline to stay on
         track.
       </p>
+
+      <button
+        onClick={toggleModal}
+        className="flex items-center gap-2 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 mb-6">
+        <GoPlusCircle />
+        Add New Task
+      </button>
 
       <TaskTable tasks={taskData as TaskItemProps[]} />
       {isModalOpen && (

@@ -4,4 +4,5 @@ export interface TaskItemProps {
   dueDate: string;
   category: string;
   priority: "High" | "Medium" | "Low";
+  onClick?: () => void;
 }
