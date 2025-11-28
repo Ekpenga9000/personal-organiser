@@ -1,6 +1,12 @@
-import { GoPlusCircle, GoPencil } from "react-icons/go";
+import {
+  GoPlusCircle,
+  GoPencil,
+  GoClock,
+  GoKebabHorizontal,
+} from "react-icons/go";
 import TaskPriorityPill from "./TaskPriorityPill";
 import TaskCategoryPill from "./TaskCategoryPill";
+import TaskNote from "./TaskNote";
 
 type TaskDetailsProps = {
   id: string;
@@ -27,9 +33,10 @@ const TaskDetails = ({ id }: TaskDetailsProps) => {
               <TaskPriorityPill priority="High" />
             </span>
           </li>
-          <li className="flex items-center gap-4 mt-4">
+          <li className="flex items-center gap-2 mt-4">
+            <GoClock className="text-gray-400" />
             <span className="text-gray-500 text-sm font-medium">
-              Due: Sept 15, 2024
+              Sept 15, 2024
             </span>
           </li>
         </ul>
@@ -56,19 +63,35 @@ const TaskDetails = ({ id }: TaskDetailsProps) => {
 
       <section className="border p-4 rounded-md grid grid-cols-3 gap-6 items-start">
         <aside className="col-span-2">
-          <h3>Subtasks:</h3>
+          <div className="mb-4 flex items-center gap-2 justify-between bg-gray-100 p-2 rounded-md">
+            <h3 className="font-semibold text-gray-800">Subtasks</h3>
+            <GoPlusCircle className="text-gray-400 cursor-pointer hover:text-gray-600" />
+          </div>
+
           <ul className="list-decimal list-inside">
             <li>Draft initial proposal document.</li>
             <li>Review with team members.</li>
             <li>Incorporate feedback and finalize.</li>
           </ul>
         </aside>
-        <aside className="col-span-1">
-          <h3>Notes:</h3>
-          <ul className="list-disc list-inside">
-            <li>Research similar projects for reference.</li>
-            <li>Outline key objectives and deliverables.</li>
-            <li>Set a realistic timeline for completion.</li>
+        <aside className="col-span-1 border-l pl-4">
+          <div className="mb-4 flex items-center gap-2 justify-between bg-gray-100 p-2 rounded-md">
+            <h3 className="font-semibold text-gray-800">Notes</h3>
+            <GoPlusCircle className="text-gray-400 cursor-pointer hover:text-gray-600" />
+          </div>
+          <ul className="">
+            <li className="">
+              <TaskNote note="Remember to align the proposal with company goals." />
+            </li>
+            <li>
+              <TaskNote note="Check budget constraints before finalizing." />
+            </li>
+            <li>
+              <TaskNote note="Outline key objectives and deliverables." />
+            </li>
+            <li>
+              <TaskNote note="Set a realistic timeline for completion." />
+            </li>
           </ul>
         </aside>
       </section>
