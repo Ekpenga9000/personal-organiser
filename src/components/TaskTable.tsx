@@ -53,7 +53,8 @@ const TaskTable = ({ tasks }: TaskTableProps) => {
         <ul className="w-full border-collapse">
           {tasks?.map((task) => (
             <TaskItem
-              key={task.title}
+              key={task.id}
+              id={task.id}
               title={task.title}
               dueDate={task.dueDate}
               category={task.category}

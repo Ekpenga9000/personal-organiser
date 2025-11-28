@@ -1,0 +1,107 @@
+[
+  {
+    "id": "task-001",
+    "title": "Complete project proposal",
+    "dueDate": "2025-12-05",
+    "category": "Work",
+    "priority": "High"
+  },
+  {
+    "id": "task-002",
+    "title": "Review code documentation",
+    "dueDate": "2025-11-30",
+    "category": "Development",
+    "priority": "Medium"
+  },
+  {
+    "id": "task-003",
+    "title": "Plan weekend grocery shopping",
+    "dueDate": "2025-11-29",
+    "category": "Personal",
+    "priority": "Low"
+  },
+  {
+    "id": "task-004",
+    "title": "Prepare presentation for client meeting",
+    "dueDate": "2025-12-03",
+    "category": "Work",
+    "priority": "High"
+  },
+  {
+    "id": "task-005",
+    "title": "Update portfolio website",
+    "dueDate": "2025-12-10",
+    "category": "Development",
+    "priority": "Medium"
+  },
+  {
+    "id": "task-006",
+    "title": "Schedule dental appointment",
+    "dueDate": "2025-12-01",
+    "category": "Health",
+    "priority": "Medium"
+  },
+  {
+    "id": "task-007",
+    "title": "Fix bug in authentication module",
+    "dueDate": "2025-11-28",
+    "category": "Development",
+    "priority": "High"
+  },
+  {
+    "id": "task-008",
+    "title": "Read 'Clean Code' book chapter 5",
+    "dueDate": "2025-12-15",
+    "category": "Learning",
+    "priority": "Low"
+  },
+  {
+    "id": "task-009",
+    "title": "Organize home office space",
+    "dueDate": "2025-12-07",
+    "category": "Personal",
+    "priority": "Low"
+  },
+  {
+    "id": "task-010",
+    "title": "Conduct team performance reviews",
+    "dueDate": "2025-12-12",
+    "category": "Work",
+    "priority": "High"
+  },
+  {
+    "id": "task-011",
+    "title": "Test new feature deployment",
+    "dueDate": "2025-11-29",
+    "category": "Development",
+    "priority": "Medium"
+  },
+  {
+    "id": "task-012",
+    "title": "Plan holiday vacation",
+    "dueDate": "2025-12-20",
+    "category": "Personal",
+    "priority": "Medium"
+  },
+  {
+    "id": "task-013",
+    "title": "Submit expense reports",
+    "dueDate": "2025-11-30",
+    "category": "Work",
+    "priority": "Medium"
+  },
+  {
+    "id": "task-014",
+    "title": "Learn TypeScript advanced patterns",
+    "dueDate": "2025-12-25",
+    "category": "Learning",
+    "priority": "Low"
+  },
+  {
+    "id": "task-015",
+    "title": "Update security protocols",
+    "dueDate": "2025-12-02",
+    "category": "Development",
+    "priority": "High"
+  }
+]

@@ -3,6 +3,15 @@ import { GoPlusCircle } from "react-icons/go";
 import TaskTable from "./TaskTable";
 import CreateTaskModal from "./CreateTaskModal";
 import ModalWrapper from "./ModalWrapper";
+import taskData from "../DB/tasks.json";
+
+type TaskItemProps = {
+  id: string;
+  title: string;
+  dueDate: string;
+  category: string;
+  priority: "High" | "Medium" | "Low";
+};
 
 const Tasks = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -19,16 +28,7 @@ const Tasks = () => {
         track.
       </p>
 
-      <div
-        className="flex items-center gap-3 border rounded-lg shadow-sm py-2 px-4 cursor-pointer mb-6 hover:bg-gray-50"
-        onClick={toggleModal}>
-        <GoPlusCircle className="text-gray-600" />{" "}
-        <span className="inline-block text-sm text-gray-500">
-          Add a new task...
-        </span>
-      </div>
-
-      <TaskTable />
+      <TaskTable tasks={taskData as TaskItemProps[]} />
       {isModalOpen && (
         <ModalWrapper onClose={toggleModal}>
           <CreateTaskModal closeModal={toggleModal} />

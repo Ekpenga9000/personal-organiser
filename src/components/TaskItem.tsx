@@ -1,24 +1,38 @@
 import { GoPencil } from "react-icons/go";
 import type { TaskItemProps } from "../interfaces/Interface";
+import { Link } from "react-router-dom";
+import TaskPriorityPill from "./TaskPriorityPill";
 
-const TaskItem = ({ title, dueDate, category, priority }: TaskItemProps) => {
+const TaskItem = ({
+  id,
+  title,
+  dueDate,
+  category,
+  priority,
+}: TaskItemProps) => {
   return (
-    <li className="flex justify-between items-center gap-4 p-2 border rounded-lg hover:bg-gray-50 cursor-pointer">
-      <div className="flex items-center gap-2">
-        <input type="checkbox" className="w-4 h-4" />
-        <p className="text-gray-800 font-semibold">{title}</p>
-        <p className="text-gray-500 text-xs font-light">(Due: {dueDate})</p>
+    <li className="grid grid-cols-6 justify-between items-center gap-4 p-2 border rounded-lg hover:bg-gray-50">
+      <div className="flex col-span-4 items-center gap-2">
+        <input type="checkbox" className="w-4 h-4 cursor-pointer" />
+        <Link to={`/tasks/${id}`} className="">
+          <p className="text-gray-800 font-semibold">{title}</p>
+          <p className="text-gray-500 text-xs font-light">(Due: {dueDate})</p>
+        </Link>
       </div>
 
-      <span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full mr-2">
-        {category}
-      </span>
+      <div className="col-span-1 flex justify-end">
+        <Link
+          to={`/tasks/category/${category}`}
+          className="inline-block bg-gray-100 text-teal-800 text-xs font-semibold px-3 py-1 rounded-full mr-2">
+          {category}
+        </Link>
+      </div>
 
-      <ul className="flex items-center gap-4">
-        <li className="inline-block bg-red-50 text-red-700 text-xs font-semibold px-3 py-1 rounded-full">
-          {priority}
+      <ul className="flex items-center justify-end gap-8">
+        <li className="">
+          <TaskPriorityPill priority={priority} />
         </li>
-        <li>
+        <li className="">
           <GoPencil className="text-gray-400 cursor-pointer" />
         </li>
       </ul>

@@ -1,6 +1,7 @@
 export interface TaskItemProps {
+  id: string;
   title: string;
   dueDate: string;
   category: string;
-  priority: "Low" | "Medium" | "High";
+  priority: "High" | "Medium" | "Low";
 }
