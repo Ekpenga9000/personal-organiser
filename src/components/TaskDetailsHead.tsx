@@ -9,6 +9,18 @@ interface TaskDetailsHeadProps {
 
 const TaskDetailsHead = ({ id }: TaskDetailsHeadProps) => {
   const task = TaskData.find((task) => task.id === id);
+
+  //Create function that converts 2025-12-15 format to December 15, 2025
+  const formatDate = (dateString: string) => {
+    const options: Intl.DateTimeFormatOptions = {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    };
+    const date = new Date(dateString);
+    return date.toLocaleDateString(undefined, options);
+  };
+
   return (
     <>
       <span className="font-semibold text-gray-600">Title</span>
@@ -34,9 +46,12 @@ const TaskDetailsHead = ({ id }: TaskDetailsHeadProps) => {
             </span>
           </li>
           <li className="flex items-center gap-2 mt-4">
-            <GoClock className="text-gray-400" />
+            <span className="flex items-center gap-2">
+              <GoClock className="text-gray-400" />
+              <strong className="text-gray-600 mr-1">Due:</strong>
+            </span>
             <span className="text-gray-500 text-sm font-medium">
-              {task?.dueDate ?? ""}
+              {task ? formatDate(task.dueDate) : "No due date set"}
             </span>
           </li>
         </ul>
