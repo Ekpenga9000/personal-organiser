@@ -1,12 +1,7 @@
-import {
-  GoPlusCircle,
-  GoPencil,
-  GoClock,
-  GoKebabHorizontal,
-} from "react-icons/go";
-import TaskPriorityPill from "./TaskPriorityPill";
-import TaskCategoryPill from "./TaskCategoryPill";
+import { GoPlusCircle, GoPencil, GoClock } from "react-icons/go";
 import TaskNote from "./TaskNote";
+import SubTaskItem from "./SubTaskItem";
+import TaskDetailsHead from "./TaskDetailsHead";
 
 type TaskDetailsProps = {
   id: string;
@@ -15,32 +10,7 @@ type TaskDetailsProps = {
 const TaskDetails = ({ id }: TaskDetailsProps) => {
   return (
     <section>
-      <span className="font-semibold text-gray-600">Title</span>
-      <div className="mb-8">
-        <ul>
-          <li className="flex items-center gap-4 mb-4">
-            <h1 className="text-2xl font-bold">Complete project proposal</h1>
-            <GoPencil className="text-gray-400 cursor-pointer hover:text-gray-600" />
-          </li>
-          <li className="flex items-center gap-4">
-            <span>
-              <strong className="text-gray-600">Category:</strong>{" "}
-              <TaskCategoryPill category="Work" />
-            </span>
-
-            <span>
-              <strong className="text-gray-600">Priority:</strong>{" "}
-              <TaskPriorityPill priority="High" />
-            </span>
-          </li>
-          <li className="flex items-center gap-2 mt-4">
-            <GoClock className="text-gray-400" />
-            <span className="text-gray-500 text-sm font-medium">
-              Sept 15, 2024
-            </span>
-          </li>
-        </ul>
-      </div>
+      <TaskDetailsHead id={id} />
 
       <div className="flex items-center mb-6 gap-6">
         <h2 className="font-semibold text-lg text-gray-600">Description</h2>
@@ -68,10 +38,10 @@ const TaskDetails = ({ id }: TaskDetailsProps) => {
             <GoPlusCircle className="text-gray-400 cursor-pointer hover:text-gray-600" />
           </div>
 
-          <ul className="list-decimal list-inside">
-            <li>Draft initial proposal document.</li>
-            <li>Review with team members.</li>
-            <li>Incorporate feedback and finalize.</li>
+          <ul className="list-inside">
+            <li>
+              <SubTaskItem text="Draft initial proposal document." />
+            </li>
           </ul>
         </aside>
         <aside className="col-span-1 border-l pl-4">

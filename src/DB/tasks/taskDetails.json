@@ -1,0 +1,372 @@
+[
+  {
+    "taskId": "task-001",
+    "description": "This task involves creating a comprehensive project proposal that outlines the scope, objectives, timeline, and deliverables for the upcoming project. The proposal should be well-structured and include all necessary details to get stakeholder approval.",
+    "subtasks": [
+      {
+        "id": "subtask-001-1",
+        "text": "Research project requirements and gather specifications"
+      },
+      {
+        "id": "subtask-001-2",
+        "text": "Draft initial proposal document structure"
+      },
+      {
+        "id": "subtask-001-3",
+        "text": "Define project scope and objectives clearly"
+      },
+      {
+        "id": "subtask-001-4",
+        "text": "Create detailed timeline with milestones"
+      },
+      {
+        "id": "subtask-001-5",
+        "text": "Review and finalize proposal for submission"
+      }
+    ]
+  },
+  {
+    "taskId": "task-002",
+    "description": "Conduct a thorough review of the existing code documentation to ensure it's up-to-date, comprehensive, and follows best practices. This includes API documentation, inline comments, and README files.",
+    "subtasks": [
+      {
+        "id": "subtask-002-1",
+        "text": "Audit existing documentation for completeness"
+      },
+      {
+        "id": "subtask-002-2",
+        "text": "Update outdated API documentation"
+      },
+      {
+        "id": "subtask-002-3",
+        "text": "Review and improve inline code comments"
+      },
+      {
+        "id": "subtask-002-4",
+        "text": "Update README files with current setup instructions"
+      }
+    ]
+  },
+  {
+    "taskId": "task-003",
+    "description": "Plan and organize weekend grocery shopping to ensure all household necessities are covered. Create a comprehensive shopping list based on meal planning and current inventory.",
+    "subtasks": [
+      {
+        "id": "subtask-003-1",
+        "text": "Check current food inventory at home"
+      },
+      {
+        "id": "subtask-003-2",
+        "text": "Plan meals for the upcoming week"
+      },
+      {
+        "id": "subtask-003-3",
+        "text": "Create detailed shopping list organized by store sections"
+      },
+      {
+        "id": "subtask-003-4",
+        "text": "Check for coupons and deals at local stores"
+      }
+    ]
+  },
+  {
+    "taskId": "task-004",
+    "description": "Develop a compelling presentation for the upcoming client meeting that effectively communicates our project approach, timeline, and expected outcomes. The presentation should be professional and engaging.",
+    "subtasks": [
+      {
+        "id": "subtask-004-1",
+        "text": "Research client background and specific needs"
+      },
+      {
+        "id": "subtask-004-2",
+        "text": "Create presentation outline and structure"
+      },
+      {
+        "id": "subtask-004-3",
+        "text": "Design slides with compelling visuals and data"
+      },
+      {
+        "id": "subtask-004-4",
+        "text": "Prepare talking points and potential Q&A responses"
+      },
+      {
+        "id": "subtask-004-5",
+        "text": "Practice presentation delivery and timing"
+      }
+    ]
+  },
+  {
+    "taskId": "task-005",
+    "description": "Refresh and update the portfolio website with recent projects, improved design, and better user experience. Ensure the site showcases skills effectively and loads quickly.",
+    "subtasks": [
+      {
+        "id": "subtask-005-1",
+        "text": "Audit current portfolio content and design"
+      },
+      {
+        "id": "subtask-005-2",
+        "text": "Add recent projects and case studies"
+      },
+      {
+        "id": "subtask-005-3",
+        "text": "Optimize images and improve site performance"
+      },
+      {
+        "id": "subtask-005-4",
+        "text": "Update contact information and social links"
+      },
+      {
+        "id": "subtask-005-5",
+        "text": "Test website responsiveness across devices"
+      }
+    ]
+  },
+  {
+    "taskId": "task-006",
+    "description": "Schedule a routine dental appointment for cleaning and checkup. Research available appointment slots and ensure insurance coverage is active.",
+    "subtasks": [
+      {
+        "id": "subtask-006-1",
+        "text": "Check dental insurance coverage and benefits"
+      },
+      {
+        "id": "subtask-006-2",
+        "text": "Research dental clinics covered by insurance"
+      },
+      {
+        "id": "subtask-006-3",
+        "text": "Call clinic to schedule appointment"
+      },
+      {
+        "id": "subtask-006-4",
+        "text": "Add appointment to calendar with reminders"
+      }
+    ]
+  },
+  {
+    "taskId": "task-007",
+    "description": "Investigate and resolve the authentication module bug that's preventing users from logging in successfully. This is a critical issue affecting user experience.",
+    "subtasks": [
+      {
+        "id": "subtask-007-1",
+        "text": "Reproduce the authentication bug in development"
+      },
+      {
+        "id": "subtask-007-2",
+        "text": "Analyze error logs and identify root cause"
+      },
+      {
+        "id": "subtask-007-3",
+        "text": "Develop and test the bug fix"
+      },
+      {
+        "id": "subtask-007-4",
+        "text": "Deploy fix to staging environment for testing"
+      },
+      {
+        "id": "subtask-007-5",
+        "text": "Deploy to production and monitor for issues"
+      }
+    ]
+  },
+  {
+    "taskId": "task-008",
+    "description": "Continue reading 'Clean Code' by Robert Martin, focusing on chapter 5 which covers formatting and code organization best practices.",
+    "subtasks": [
+      {
+        "id": "subtask-008-1",
+        "text": "Read chapter 5 thoroughly and take notes"
+      },
+      {
+        "id": "subtask-008-2",
+        "text": "Practice formatting techniques on current projects"
+      },
+      {
+        "id": "subtask-008-3",
+        "text": "Create summary of key concepts learned"
+      },
+      {
+        "id": "subtask-008-4",
+        "text": "Share insights with development team"
+      }
+    ]
+  },
+  {
+    "taskId": "task-009",
+    "description": "Declutter and reorganize the home office space to create a more productive and inspiring work environment. Focus on desk organization and storage solutions.",
+    "subtasks": [
+      {
+        "id": "subtask-009-1",
+        "text": "Sort through desk items and remove unnecessary clutter"
+      },
+      {
+        "id": "subtask-009-2",
+        "text": "Organize cables and electronic accessories"
+      },
+      {
+        "id": "subtask-009-3",
+        "text": "Set up proper filing system for documents"
+      },
+      {
+        "id": "subtask-009-4",
+        "text": "Arrange workspace for optimal ergonomics"
+      }
+    ]
+  },
+  {
+    "taskId": "task-010",
+    "description": "Conduct comprehensive performance reviews for team members, providing constructive feedback and setting goals for the upcoming quarter.",
+    "subtasks": [
+      {
+        "id": "subtask-010-1",
+        "text": "Review each team member's quarterly achievements"
+      },
+      {
+        "id": "subtask-010-2",
+        "text": "Prepare individual feedback and development plans"
+      },
+      {
+        "id": "subtask-010-3",
+        "text": "Schedule one-on-one review meetings"
+      },
+      {
+        "id": "subtask-010-4",
+        "text": "Document review outcomes and next quarter goals"
+      },
+      {
+        "id": "subtask-010-5",
+        "text": "Follow up on any action items or concerns"
+      }
+    ]
+  },
+  {
+    "taskId": "task-011",
+    "description": "Execute comprehensive testing of the new feature before deployment to ensure functionality, performance, and compatibility across different environments.",
+    "subtasks": [
+      {
+        "id": "subtask-011-1",
+        "text": "Run unit tests and fix any failures"
+      },
+      {
+        "id": "subtask-011-2",
+        "text": "Perform integration testing with existing systems"
+      },
+      {
+        "id": "subtask-011-3",
+        "text": "Test feature across different browsers and devices"
+      },
+      {
+        "id": "subtask-011-4",
+        "text": "Conduct user acceptance testing"
+      },
+      {
+        "id": "subtask-011-5",
+        "text": "Deploy to production and monitor metrics"
+      }
+    ]
+  },
+  {
+    "taskId": "task-012",
+    "description": "Research and plan a relaxing holiday vacation that fits within budget and schedule constraints. Consider destinations, activities, and accommodation options.",
+    "subtasks": [
+      {
+        "id": "subtask-012-1",
+        "text": "Research potential vacation destinations"
+      },
+      {
+        "id": "subtask-012-2",
+        "text": "Compare flight and accommodation prices"
+      },
+      {
+        "id": "subtask-012-3",
+        "text": "Plan activities and create itinerary"
+      },
+      {
+        "id": "subtask-012-4",
+        "text": "Book flights and accommodations"
+      },
+      {
+        "id": "subtask-012-5",
+        "text": "Arrange time off from work"
+      }
+    ]
+  },
+  {
+    "taskId": "task-013",
+    "description": "Compile and submit monthly expense reports for reimbursement, ensuring all receipts are included and categorized correctly according to company policy.",
+    "subtasks": [
+      {
+        "id": "subtask-013-1",
+        "text": "Gather all expense receipts from the month"
+      },
+      {
+        "id": "subtask-013-2",
+        "text": "Categorize expenses according to company policy"
+      },
+      {
+        "id": "subtask-013-3",
+        "text": "Fill out expense report form with details"
+      },
+      {
+        "id": "subtask-013-4",
+        "text": "Scan and attach all receipts"
+      },
+      {
+        "id": "subtask-013-5",
+        "text": "Submit report through company portal"
+      }
+    ]
+  },
+  {
+    "taskId": "task-014",
+    "description": "Dive deeper into TypeScript advanced patterns including generics, conditional types, and mapped types to improve code quality and type safety.",
+    "subtasks": [
+      {
+        "id": "subtask-014-1",
+        "text": "Study TypeScript advanced generics documentation"
+      },
+      {
+        "id": "subtask-014-2",
+        "text": "Learn conditional types and their use cases"
+      },
+      {
+        "id": "subtask-014-3",
+        "text": "Practice with mapped types and utility types"
+      },
+      {
+        "id": "subtask-014-4",
+        "text": "Implement advanced patterns in current projects"
+      },
+      {
+        "id": "subtask-014-5",
+        "text": "Create reference guide for team use"
+      }
+    ]
+  },
+  {
+    "taskId": "task-015",
+    "description": "Review and update security protocols across all systems to ensure compliance with latest security standards and protect against emerging threats.",
+    "subtasks": [
+      {
+        "id": "subtask-015-1",
+        "text": "Audit current security protocols and policies"
+      },
+      {
+        "id": "subtask-015-2",
+        "text": "Research latest security best practices"
+      },
+      {
+        "id": "subtask-015-3",
+        "text": "Update authentication and authorization systems"
+      },
+      {
+        "id": "subtask-015-4",
+        "text": "Implement additional security monitoring"
+      },
+      {
+        "id": "subtask-015-5",
+        "text": "Train team on new security protocols"
+      }
+    ]
+  }
+]

@@ -1,0 +1,293 @@
+[
+    {
+        "taskId": "task-001",
+        "notes": [
+            {
+                "id": "note-001-1",
+                "text": "Remember to align the proposal with company goals."
+            },
+            {
+                "id": "note-001-2",
+                "text": "Check budget constraints before finalizing."
+            },
+            {
+                "id": "note-001-3",
+                "text": "Include risk assessment and mitigation strategies."
+            },
+            {
+                "id": "note-001-4",
+                "text": "Get feedback from stakeholders before submission."
+            }
+        ]
+    },
+    {
+        "taskId": "task-002",
+        "notes": [
+            {
+                "id": "note-002-1",
+                "text": "Focus on API endpoints that changed recently."
+            },
+            {
+                "id": "note-002-2",
+                "text": "Use consistent documentation format across all files."
+            },
+            {
+                "id": "note-002-3",
+                "text": "Add code examples for complex functions."
+            }
+        ]
+    },
+    {
+        "taskId": "task-003",
+        "notes": [
+            {
+                "id": "note-003-1",
+                "text": "Check for seasonal sales at the grocery store."
+            },
+            {
+                "id": "note-003-2",
+                "text": "Don't forget to buy ingredients for Sunday dinner."
+            },
+            {
+                "id": "note-003-3",
+                "text": "Bring reusable bags to reduce plastic waste."
+            }
+        ]
+    },
+    {
+        "taskId": "task-004",
+        "notes": [
+            {
+                "id": "note-004-1",
+                "text": "Keep presentation under 30 minutes for Q&A time."
+            },
+            {
+                "id": "note-004-2",
+                "text": "Prepare backup slides in case of technical issues."
+            },
+            {
+                "id": "note-004-3",
+                "text": "Research client's recent challenges and pain points."
+            },
+            {
+                "id": "note-004-4",
+                "text": "Include case studies from similar successful projects."
+            }
+        ]
+    },
+    {
+        "taskId": "task-005",
+        "notes": [
+            {
+                "id": "note-005-1",
+                "text": "Ensure website loads in under 3 seconds."
+            },
+            {
+                "id": "note-005-2",
+                "text": "Add dark mode toggle for better user experience."
+            },
+            {
+                "id": "note-005-3",
+                "text": "Update resume with latest skills and certifications."
+            },
+            {
+                "id": "note-005-4",
+                "text": "Test contact form functionality thoroughly."
+            }
+        ]
+    },
+    {
+        "taskId": "task-006",
+        "notes": [
+            {
+                "id": "note-006-1",
+                "text": "Bring previous dental records if switching dentists."
+            },
+            {
+                "id": "note-006-2",
+                "text": "Schedule early morning appointment to avoid traffic."
+            },
+            {
+                "id": "note-006-3",
+                "text": "Ask about teeth whitening options during visit."
+            }
+        ]
+    },
+    {
+        "taskId": "task-007",
+        "notes": [
+            {
+                "id": "note-007-1",
+                "text": "Check if bug affects both mobile and desktop versions."
+            },
+            {
+                "id": "note-007-2",
+                "text": "Review recent authentication library updates."
+            },
+            {
+                "id": "note-007-3",
+                "text": "Test with different user roles and permissions."
+            },
+            {
+                "id": "note-007-4",
+                "text": "Document the fix for future reference."
+            }
+        ]
+    },
+    {
+        "taskId": "task-008",
+        "notes": [
+            {
+                "id": "note-008-1",
+                "text": "Take notes on key formatting principles."
+            },
+            {
+                "id": "note-008-2",
+                "text": "Apply learned concepts to current codebase."
+            },
+            {
+                "id": "note-008-3",
+                "text": "Compare with team's current coding standards."
+            }
+        ]
+    },
+    {
+        "taskId": "task-009",
+        "notes": [
+            {
+                "id": "note-009-1",
+                "text": "Invest in a good cable management system."
+            },
+            {
+                "id": "note-009-2",
+                "text": "Consider adding plants for better air quality."
+            },
+            {
+                "id": "note-009-3",
+                "text": "Ensure proper lighting to reduce eye strain."
+            },
+            {
+                "id": "note-009-4",
+                "text": "Keep frequently used items within arm's reach."
+            }
+        ]
+    },
+    {
+        "taskId": "task-010",
+        "notes": [
+            {
+                "id": "note-010-1",
+                "text": "Focus on both achievements and areas for improvement."
+            },
+            {
+                "id": "note-010-2",
+                "text": "Set SMART goals for the next quarter."
+            },
+            {
+                "id": "note-010-3",
+                "text": "Discuss career development opportunities."
+            },
+            {
+                "id": "note-010-4",
+                "text": "Schedule follow-up meetings for ongoing support."
+            }
+        ]
+    },
+    {
+        "taskId": "task-011",
+        "notes": [
+            {
+                "id": "note-011-1",
+                "text": "Test with realistic data volumes and edge cases."
+            },
+            {
+                "id": "note-011-2",
+                "text": "Monitor performance metrics during testing."
+            },
+            {
+                "id": "note-011-3",
+                "text": "Coordinate deployment with the DevOps team."
+            }
+        ]
+    },
+    {
+        "taskId": "task-012",
+        "notes": [
+            {
+                "id": "note-012-1",
+                "text": "Book flights early for better deals."
+            },
+            {
+                "id": "note-012-2",
+                "text": "Check visa requirements for international travel."
+            },
+            {
+                "id": "note-012-3",
+                "text": "Research local customs and cultural etiquette."
+            },
+            {
+                "id": "note-012-4",
+                "text": "Pack light and check airline baggage policies."
+            }
+        ]
+    },
+    {
+        "taskId": "task-013",
+        "notes": [
+            {
+                "id": "note-013-1",
+                "text": "Keep digital copies of all receipts as backup."
+            },
+            {
+                "id": "note-013-2",
+                "text": "Double-check expense categories against policy."
+            },
+            {
+                "id": "note-013-3",
+                "text": "Submit before month-end deadline for faster processing."
+            }
+        ]
+    },
+    {
+        "taskId": "task-014",
+        "notes": [
+            {
+                "id": "note-014-1",
+                "text": "Practice with real-world examples from current projects."
+            },
+            {
+                "id": "note-014-2",
+                "text": "Join TypeScript community discussions for insights."
+            },
+            {
+                "id": "note-014-3",
+                "text": "Focus on patterns that improve code maintainability."
+            },
+            {
+                "id": "note-014-4",
+                "text": "Document learnings for team knowledge sharing."
+            }
+        ]
+    },
+    {
+        "taskId": "task-015",
+        "notes": [
+            {
+                "id": "note-015-1",
+                "text": "Review recent security vulnerability reports."
+            },
+            {
+                "id": "note-015-2",
+                "text": "Implement multi-factor authentication where missing."
+            },
+            {
+                "id": "note-015-3",
+                "text": "Schedule regular security audits going forward."
+            },
+            {
+                "id": "note-015-4",
+                "text": "Update incident response procedures."
+            }
+        ]
+    }
+]
