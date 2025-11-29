@@ -2,6 +2,7 @@ import { GoPencil, GoClock } from "react-icons/go";
 import TaskPriorityPill from "./TaskPriorityPill";
 import TaskCategoryPill from "./TaskCategoryPill";
 import TaskData from "../DB/tasks/tasks.json";
+import { formatDate } from "../utils/utilFunctions";
 
 interface TaskDetailsHeadProps {
   id: string;
@@ -11,15 +12,6 @@ const TaskDetailsHead = ({ id }: TaskDetailsHeadProps) => {
   const task = TaskData.find((task) => task.id === id);
 
   //Create function that converts 2025-12-15 format to December 15, 2025
-  const formatDate = (dateString: string) => {
-    const options: Intl.DateTimeFormatOptions = {
-      year: "numeric",
-      month: "long",
-      day: "numeric",
-    };
-    const date = new Date(dateString);
-    return date.toLocaleDateString(undefined, options);
-  };
 
   return (
     <>
