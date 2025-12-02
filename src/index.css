@@ -22,3 +22,11 @@
 .task-catergory-item--active {
   @apply task-catergory-item bg-white hover:bg-white shadow-sm;
 }
+
+.button-secondary {
+  @apply flex items-center gap-2 border border-gray-300 px-3 py-2 rounded-md hover:bg-gray-100 hover:ease-in-out hover:duration-200 shadow-sm;
+}
+
+.button-primary {
+  @apply flex items-center gap-2 text-white bg-blue-500 px-3 py-2 rounded-md hover:bg-blue-600 hover:ease-in-out hover:duration-200 shadow-sm;
+}

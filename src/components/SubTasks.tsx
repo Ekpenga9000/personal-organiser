@@ -1,4 +1,4 @@
-import { GoPlusCircle } from "react-icons/go";
+import { GoPlus } from "react-icons/go";
 import SubTaskItem from "./SubTaskItem";
 
 interface Subtask {
@@ -12,10 +12,13 @@ interface SubTasksProps {
 
 const SubTasks = ({ subtasks }: SubTasksProps) => {
   return (
-    <aside className="col-span-2">
-      <div className="mb-4 flex items-center gap-2 justify-between bg-gray-100 p-2 rounded-md">
+    <aside className="mb-10">
+      <div className="mb-4 flex items-center justify-between">
         <h3 className="font-semibold text-gray-800">Subtasks</h3>
-        <GoPlusCircle className="text-gray-400 cursor-pointer hover:text-gray-600" />
+        <button className="button-secondary text-sm">
+          <GoPlus />
+          <span className="font-semibold">Add Subtask</span>
+        </button>
       </div>
 
       <ul className="list-inside">
